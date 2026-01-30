@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 8.1.1">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Ma+Shan+Zheng:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Zilla+Slab:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=JetBrains+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.0.0/css/all.min.css" integrity="sha256-VHqXKFhhMxcpubYf9xiWdCiojEbY9NexQ4jh8AxbvcM=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.css">
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js" integrity="sha256-gqd7YTjg/BtfqWSwsJOvndl0Bxc8gFImLEkXQT8+qj0=" crossorigin="anonymous" defer></script>
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.liuzhenglin.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.27.0","exturl":false,"sidebar":{"position":"right","width_expanded":320,"width_dual_column":240,"display":"post","padding":0,"offset":18},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":true,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.27.0/source/js/config.min.js" defer></script>
+
+    <meta name="description" content="I will show you how to use the Crypt driver in OpenList to encrypt your local data before uploading it to the cloud. By doing this, you can protect your privacy and avoid triggering automated content">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Encrypting Cloud Storage with OpenList Crypt">
+<meta property="og:url" content="https://www.liuzhenglin.com/Encrypting_Cloud_Storage_with_OpenList_Crypt/index.html">
+<meta property="og:site_name" content="无名客的读书笔记">
+<meta property="og:description" content="I will show you how to use the Crypt driver in OpenList to encrypt your local data before uploading it to the cloud. By doing this, you can protect your privacy and avoid triggering automated content">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2026-01-21T03:54:01.000Z">
+<meta property="article:modified_time" content="2026-01-23T04:56:49.791Z">
+<meta property="article:author" content="Liu Zhenglin">
+<meta property="article:tag" content="Crypt">
+<meta name="twitter:card" content="summary">
+
+
+<link rel="canonical" href="https://www.liuzhenglin.com/Encrypting_Cloud_Storage_with_OpenList_Crypt/">
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://www.liuzhenglin.com/Encrypting_Cloud_Storage_with_OpenList_Crypt/","path":"Encrypting_Cloud_Storage_with_OpenList_Crypt/","title":"Encrypting Cloud Storage with OpenList Crypt"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Encrypting Cloud Storage with OpenList Crypt | 无名客的读书笔记</title>
+  
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.27.0/source/js/utils.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.27.0/source/js/motion.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.27.0/source/js/sidebar.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.27.0/source/js/next-boot.min.js" defer></script>
+
+  
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/hexo-theme-next@8.27.0/source/js/third-party/pace.min.js" defer></script>
+
+
+  
+
+
+
+
+<script src="https://fastly.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js"></script>
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">无名客的读书笔记</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">1</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">2</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">1</span></a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Tools-and-versions-used-in-this-demo"><span class="nav-number">1.</span> <span class="nav-text">Tools and versions used in this demo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Step-by-Step-Implementation"><span class="nav-number">2.</span> <span class="nav-text">Step-by-Step Implementation</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Install-OpenList"><span class="nav-number">2.1.</span> <span class="nav-text">Install OpenList</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Run-OpenList"><span class="nav-number">2.2.</span> <span class="nav-text">Run OpenList</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Add-BaiduNetdisk-Driver"><span class="nav-number">2.3.</span> <span class="nav-text">Add BaiduNetdisk Driver</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Configure-the-Crypt-Driver"><span class="nav-number">2.4.</span> <span class="nav-text">Configure the Crypt Driver</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Important-Notes"><span class="nav-number">3.</span> <span class="nav-text">Important Notes</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Liu Zhenglin</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">1</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Kinstr" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Kinstr" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:kinskr@163.com" title="E-Mail → mailto:kinskr@163.com" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/big/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://www.liuzhenglin.com/Encrypting_Cloud_Storage_with_OpenList_Crypt/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Liu Zhenglin">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="无名客的读书笔记">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Encrypting Cloud Storage with OpenList Crypt | 无名客的读书笔记">
+      <meta itemprop="description" content="I will show you how to use the Crypt driver in OpenList to encrypt your local data before uploading it to the cloud. By doing this, you can protect your privacy and avoid triggering automated content filters or censors.">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Encrypting Cloud Storage with OpenList Crypt
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2026-01-21 11:54:01" itemprop="dateCreated datePublished" datetime="2026-01-21T11:54:01+08:00">2026-01-21</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-01-23 12:56:49" itemprop="dateModified" datetime="2026-01-23T12:56:49+08:00">2026-01-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Tutorial/" itemprop="url" rel="index"><span itemprop="name">Tutorial</span></a>
+        </span>
+          , 
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Tutorial/OpenList/" itemprop="url" rel="index"><span itemprop="name">OpenList</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+            <div class="post-description">I will show you how to use the Crypt driver in OpenList to encrypt your local data before uploading it to the cloud. By doing this, you can protect your privacy and avoid triggering automated content filters or censors.</div>
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><h1 id="Tools-and-versions-used-in-this-demo"><a href="#Tools-and-versions-used-in-this-demo" class="headerlink" title="Tools and versions used in this demo"></a>Tools and versions used in this demo</h1><ul>
+<li>Operating System: Windows 11 Pro (Version 25H2)</li>
+<li>OpenList : v4.1.9</li>
+</ul>
+<h1 id="Step-by-Step-Implementation"><a href="#Step-by-Step-Implementation" class="headerlink" title="Step-by-Step Implementation"></a>Step-by-Step Implementation</h1><h2 id="Install-OpenList"><a href="#Install-OpenList" class="headerlink" title="Install OpenList"></a>Install OpenList</h2><p>You can learn more about OpenList on its official wbsite: <a target="_blank" rel="noopener" href="https://www.oplist.org/">https://www.oplist.org/</a></p>
+<p>To get started, download openList app that matches your operating system from the link below:</p>
+<ul>
+<li>GitHub Releases: <a target="_blank" rel="noopener" href="https://github.com/OpenListTeam/OpenList/releases">https://github.com/OpenListTeam/OpenList/releases</a></li>
+</ul>
+<h2 id="Run-OpenList"><a href="#Run-OpenList" class="headerlink" title="Run OpenList"></a>Run OpenList</h2><p>After downloading the portable file (openlist.exe), follow these steps to get it running:</p>
+<ul>
+<li>Organize: Move the openlist.exe file into a dedicated folder to keep things tidy.</li>
+<li>Open Terminal: Open the Command Prompt (CMD) in that folder.</li>
+<li>Start the APP: Run the following command to start OpenList.</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openlist start</span><br></pre></td></tr></table></figure>
+<ul>
+<li>Access the Web Interface: <a target="_blank" rel="noopener" href="http://localhost:5244/">http://localhost:5244/</a><br>The default username is admin and you can set your password by use the following command in terminal.</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openlist admin set &lt;your password&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Add-BaiduNetdisk-Driver"><a href="#Add-BaiduNetdisk-Driver" class="headerlink" title="Add BaiduNetdisk Driver"></a>Add BaiduNetdisk Driver</h2><p>Follow the official documentation to mount your Baidu Netdisk. This will serve as the destination where your encrypted data is stored.</p>
+<ul>
+<li>Official Guide: <a target="_blank" rel="noopener" href="https://doc.oplist.org/guide/drivers/baidu">https://doc.oplist.org/guide/drivers/baidu</a></li>
+</ul>
+<h2 id="Configure-the-Crypt-Driver"><a href="#Configure-the-Crypt-Driver" class="headerlink" title="Configure the Crypt Driver"></a>Configure the Crypt Driver</h2><p>Follow the official documentation to add the Crypt driver: </p>
+<ul>
+<li>Official Guide: <a target="_blank" rel="noopener" href="https://doc.oplist.org/guide/drivers/crypt">https://doc.oplist.org/guide/drivers/crypt</a></li>
+</ul>
+<p>During setup, set the <strong>Remote path</strong> to the Baidu Netdisk location you added in the previous step.</p>
+<p>All set! You can now upload files directly to the folder that associated with OpenList Crypt drive. The data will be automatically encrypted and stored in your Baidu Netdisk, while remaining fully accessible and readable within the OpenList interface.</p>
+<h1 id="Important-Notes"><a href="#Important-Notes" class="headerlink" title="Important Notes"></a>Important Notes</h1><ul>
+<li>Do not check “try rapid” on the file upload page.</li>
+<li>Remember your password and salt!</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Liu Zhenglin
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="https://www.liuzhenglin.com/Encrypting_Cloud_Storage_with_OpenList_Crypt/" title="Encrypting Cloud Storage with OpenList Crypt">https://www.liuzhenglin.com/Encrypting_Cloud_Storage_with_OpenList_Crypt/</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Crypt/" rel="tag"><i class="fa fa-tag"></i> Crypt</a>
+          </div>
+
+        
+
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="beian"><a href="https://beian.miit.gov.cn/" rel="noopener" target="_blank">湘ICP备2024046506号-1 </a>
+    <br>
+      <img src="/img/beian.webp" style="height:1.1em; width:auto; vertical-align: middle; position: relative;" alt="beian"><a href="https://beian.mps.gov.cn/#/query/webSearch?code=43313002000080" rel="noopener" target="_blank">湘公网安备43313002000080号 </a>
+  </div>
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2026</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Liu Zhenglin</span>
+  </div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> & <a href="https://github.com/Kinstr/blog" rel="noopener" target="_blank">GitHub Pages</a>
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+  <a href="https://github.com/Kinstr/Blog" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+</body>
+</html>
