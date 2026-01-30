@@ -57,10 +57,10 @@ lightdark:
 # ---------------------------------------------------------------
 
 favicon:
-  small: 
-  medium: 
-  apple_touch_icon: 
-  safari_pinned_tab: 
+  small: /img/site-alt.svg
+  medium: /img/site-alt.svg
+  apple_touch_icon: /img/site-alt.svg
+  safari_pinned_tab: /img/site-alt.svg
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
