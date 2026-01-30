@@ -101,7 +101,3 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
-  repo: git@github.com:Kinstr/Blog.git
-  branch: main
-  message: "Site Updated: {{ now('MM-DD HH:mm:ss') }}"
