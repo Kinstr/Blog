@@ -637,8 +637,8 @@ quicklink:
 # Use Animate.css to animate everything.
 # For more information: https://animate.style
 motion:
-  enable: true
-  async: true
+  enable: false
+  async: false
   duration: 200
   transition:
     # All available transition variants: https://theme-next.js.org/animate/
@@ -653,7 +653,7 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/CodeByZach/pace
 pace:
-  enable: true
+  enable: false
   # All available colors:
   # black | blue | green | orange | pink | purple | red | silver | white | yellow
   color: blue
@@ -665,9 +665,9 @@ pace:
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
-  size: 200 # The width of the ribbon
-  alpha: 0.2 # The transparency of the ribbon
+  enable: true
+  size: 300 # The width of the ribbon
+  alpha: 0.5 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
 
