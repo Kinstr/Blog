@@ -775,7 +775,7 @@ addtoany:
 # Google Analytics
 # See: https://analytics.google.com
 google_analytics:
-  tracking_id: G-T6RHL04RGW
+  tracking_id: 
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
@@ -784,7 +784,7 @@ google_analytics:
 
 # Baidu Analytics
 # See: https://tongji.baidu.com
-baidu_analytics: a689bb63d33789a2357419ab894da93c
+baidu_analytics: 
 
 # Cloudflare Web Analytics
 # See: https://www.cloudflare.com/web-analytics/
@@ -792,7 +792,7 @@ cloudflare_analytics:
 
 # Microsoft Clarity Analytics
 # See: https://clarity.microsoft.com/
-clarity_analytics: va3wachkpu
+clarity_analytics: 
 
 # Matomo Analytics
 # See: https://matomo.org/
