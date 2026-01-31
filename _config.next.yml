@@ -61,7 +61,7 @@ favicon:
   medium: /img/blog.svg
   apple_touch_icon: /img/blog.svg
   safari_pinned_tab: /img/blog.svg
-  #android_manifest: /manifest.json
+  android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
 custom_logo: 
@@ -149,7 +149,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: 
+  url: /img/math_12743748.gif
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
