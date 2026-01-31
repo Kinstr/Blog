@@ -98,6 +98,8 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+all_minifier: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
