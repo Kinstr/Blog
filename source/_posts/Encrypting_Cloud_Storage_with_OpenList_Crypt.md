@@ -1,11 +1,16 @@
 ---
 title: Encrypting Cloud Storage with OpenList Crypt
+tags:
+  - Crypt
+categories:
+  - - Tutorial
+    - OpenList
+description: >-
+  I will show you how to use the Crypt driver in OpenList to encrypt your local
+  data before uploading it to the cloud. By doing this, you can protect your
+  privacy and avoid triggering automated content filters or censors.
+abbrlink: 33bea5e4
 date: 2026-01-21 11:54:01
-tags: 
-    - Crypt
-categories: 
-    - [Tutorial, OpenList]
-description: I will show you how to use the Crypt driver in OpenList to encrypt your local data before uploading it to the cloud. By doing this, you can protect your privacy and avoid triggering automated content filters or censors.
 ---
 
 # Tools and versions used in this demo

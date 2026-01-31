@@ -5,8 +5,8 @@
 # Site
 title: 无名客的读书笔记
 subtitle: '做了一点微小的积累'
-description: ''
-keywords:
+description: '> A personal blog dedicated to the exploration of Internet technologies and advanced mathematics. Featuring in-depth study notes on Operator Theory, technical insights into modern software development, and authentic reflections on daily life.'
+keywords: Operator Theory, Internet Technology, Math Notes, Blog
 author: Liu Zhenglin
 language: en
 timezone: 'Asia/Shanghai'
@@ -14,7 +14,8 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.liuzhenglin.com
-permalink: :title/
+root: /
+permalink: posts/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -127,6 +128,17 @@ filter_optimize:
   # set the priority of this plugin,
   # lower means it will be executed first, default of Hexo is 10
   priority: 12
+
+# 站点地图配置
+sitemap:
+  path: sitemap.xml
+baidusitemap:
+  path: baidusitemap.xml
+
+# abbrlink 配置
+abbrlink:
+  alg: crc32      # 算法：crc16 或 crc32（推荐 crc32，更长更唯一）
+  rep: hex        # 进制：dec（十进制）或 hex（十六进制）
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

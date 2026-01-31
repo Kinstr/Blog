@@ -1,12 +1,16 @@
 ---
 title: Host Hexo on Cloudflare/Aliyun Pages
-categories: 
-    - [Tutorial, Pages]
-date: 2026-01-31 11:44:52
-tags:
-    - Hexo
+categories:
+  - - Tutorial
     - Pages
-description: I will demonstrate the process of deploying a Hexo blog via Cloudflare/Aliyun Pages in this guide.
+tags:
+  - Hexo
+  - Pages
+description: >-
+  I will demonstrate the process of deploying a Hexo blog via Cloudflare/Aliyun
+  Pages in this guide.
+abbrlink: 79c5548f
+date: 2026-01-31 11:44:52
 ---
 # Introduction
 
