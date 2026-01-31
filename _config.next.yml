@@ -57,10 +57,10 @@ lightdark:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /img/site-alt.svg
-  medium: /img/site-alt.svg
-  apple_touch_icon: /img/site-alt.svg
-  safari_pinned_tab: /img/site-alt.svg
+  small: /img/blog.svg
+  medium: /img/blog.svg
+  apple_touch_icon: /img/blog.svg
+  safari_pinned_tab: /img/blog.svg
   #android_manifest: /manifest.json
 
 # Custom Logo (Warning: Do not support scheme Mist)
@@ -176,7 +176,7 @@ social:
 social_icons:
   enable: true
   icons_only: false
-  transition: false
+  transition: true
 
 # Blog rolls
 links_settings:
@@ -366,7 +366,7 @@ theme_color:
 # Override browsers' default behavior.
 body_scrollbar:
   # Place the scrollbar over the content.
-  overlay: false
+  overlay: true
   # Reserving space for the scrollbar gutter even if the content is not overflowing.
   stable: false
 
@@ -396,11 +396,11 @@ back2top:
   # Back to top in sidebar.
   sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: left | right
   start_at: left
   # Available values: top | bottom
@@ -421,7 +421,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: true
-  permalink: https://github.com/Kinstr/Blog
+  permalink: https://github.com/Kinstr/blog
 
 
 # ---------------------------------------------------------------
@@ -623,11 +623,11 @@ quicklink:
   archive: enable
 
   # Default (true) will initialize quicklink after the load event fires.
-  delay: true
+  delay: false
   # Custom a time in milliseconds by which the browser must execute prefetching.
   timeout: 3000
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
-  priority: true
+  priority: false
 
 
 # ---------------------------------------------------------------
@@ -665,9 +665,9 @@ pace:
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: true
-  size: 300 # The width of the ribbon
-  alpha: 0.5 # The transparency of the ribbon
+  enable: false
+  size: 10 # The width of the ribbon
+  alpha: 0.01 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
 
@@ -898,11 +898,11 @@ vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: jsdelivr
+  internal: local
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: jsdelivr
+  plugins: local
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
