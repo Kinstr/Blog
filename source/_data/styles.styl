@@ -1,3 +1,13 @@
 .site-brand-container {
   background-color: #FF6100;
 }
+
+// 这里的 991px 是 NexT 默认的平板与手机的分界线
+@media (max-width: 991px) {
+  .sidebar-toggle, .sidebar {
+    display: none !important;
+  }
+  .back-to-top {
+    display: none !important;
+  }
+}

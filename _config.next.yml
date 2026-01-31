@@ -623,7 +623,7 @@ quicklink:
   archive: false
 
   # Default (true) will initialize quicklink after the load event fires.
-  delay: true
+  delay: false
   # Custom a time in milliseconds by which the browser must execute prefetching.
   timeout: 3000
   # Default (true) will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
@@ -902,7 +902,7 @@ vendors:
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs | custom
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
-  plugins: custom
+  plugins: local
   # Custom CDN URL
   # For example:
   # custom_cdn_url: https://cdn.jsdelivr.net/npm/${npm_name}@${version}/${minified}
