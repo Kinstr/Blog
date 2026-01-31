@@ -140,6 +140,23 @@ abbrlink:
   alg: crc32      # 算法：crc16 或 crc32（推荐 crc32，更长更唯一）
   rep: hex        # 进制：dec（十进制）或 hex（十六进制）
 
+# Algolia Search
+algolia:
+  appId: "78AR6LRXE6"
+  applicationID: "78AR6LRXE6"
+  chunkSize: 5000
+  indexName: "Hexo-Next"
+  fields:
+    - content:strip:truncate,0,500
+    - excerpt:strip
+    - gallery
+    - permalink
+    - photos
+    - slug
+    - tags
+    - title
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:

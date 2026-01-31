@@ -1,32 +1,23 @@
-// 这里的 991px 是 NexT 默认的平板与手机的分界线
-@media (max-width: 991px) {
+body {
+    background: #FFF;
+}
+
+.site-brand-container {
+    background: #002FA7;
+}
+
+
+@media (max-width: 990px) {
   .sidebar-toggle, .sidebar {
-    display: none !important;
+    display: none;
   }
   .back-to-top {
-    display: none !important;
+    display: none;
   }
 }
 
+# 图片自定义样式
 .img-custom {
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 47, 167, 0.2);
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('/lib/@fortawesome/fontawesome-free/webfonts/fa-solid-900.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('/lib/@fortawesome/fontawesome-free/webfonts/fa-regular-400.woff2') format('woff2');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('/lib/@fortawesome/fontawesome-free/webfonts/fa-brands-400.woff2') format('woff2');
-  font-display: swap;
 }
