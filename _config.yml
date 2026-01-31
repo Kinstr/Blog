@@ -113,7 +113,7 @@ abbrlink:
 # Algolia Search
 plugins:
   - hexo-algoliasearch
-  
+
 algolia:
   appId: "78AR6LRXE6"
   applicationID: "78AR6LRXE6"
@@ -121,9 +121,14 @@ algolia:
   chunkSize: 5000
   indexName: "Hexo-Next"
   fields:
-    - path
     - title
-    - content:strip
+    - path
+    - categories
+    - content:strip:truncate,0,4000
+    - gallery
+    - photos
+    - tags
+
 
 
 # Deployment
