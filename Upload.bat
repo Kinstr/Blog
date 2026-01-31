@@ -2,6 +2,6 @@
 
 git add .
 
-git commit -m "Initial commit"
+git commit -m "Update Blog"
 
 git push origin main:Hexo-Next
