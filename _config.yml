@@ -118,6 +118,7 @@ algolia:
   appId: "78AR6LRXE6"
   applicationID: "78AR6LRXE6"
   apiKey: "138f37f383fc8bb4fcc9a42abaca64f9"
+  adminApiKey: "b308aadc6cf546a69b09bdf90ac895f8"
   chunkSize: 5000
   indexName: "Hexo-Next"
   fields:
