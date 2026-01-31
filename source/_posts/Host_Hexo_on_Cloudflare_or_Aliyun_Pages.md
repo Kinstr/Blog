@@ -57,7 +57,7 @@ Access the **ESA Pages dashboard** (https://esa.console.aliyun.com/edge/pages/li
 Click **Next** to proceed to the **Configure** page. Please refer to the configuration below for specific parameters; leave all other settings at their default.
 
 {% codeblock %}
-Prod: Hexo-Next
+Prod: <Your Production branch>
 Install Command: npm install
 Build: chmod +x ./node_modules/.bin/hexo && npx hexo generate
 Static Assets Dir: ./public
