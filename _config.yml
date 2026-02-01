@@ -124,14 +124,10 @@ algolia:
   indexName: "Hexo-Next"
   fields:
     - title
-    - content:strip
-    - path
-    - abbrlink
-    - categories
     - tags
+    - categories
     - permalink
-
-
+    - content:strip
 
 
 # Deployment
