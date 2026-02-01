@@ -14,8 +14,7 @@ timezone: 'Asia/Shanghai'
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://www.liuzhenglin.com
-root: /
-permalink: :title.html
+permalink: blog/:abbrlink.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -107,8 +106,10 @@ baidusitemap:
 
 # abbrlink 配置
 abbrlink:
-  alg: crc32      # 算法：crc16 或 crc32（推荐 crc32，更长更唯一）
-  rep: hex        # 进制：dec（十进制）或 hex（十六进制）
+  algolia: true
+  algolia_field: path
+  format: hmac
+  alg: hex
 
 # Algolia Search
 plugins:
@@ -123,12 +124,13 @@ algolia:
   indexName: "Hexo-Next"
   fields:
     - title
+    - content:strip
     - path
+    - abbrlink
     - categories
-    - content:strip:truncate,0,4000
-    - gallery
-    - photos
     - tags
+    - permalink
+
 
 
 
