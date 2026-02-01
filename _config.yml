@@ -131,25 +131,23 @@ algolia:
 
 filter_optimize:
   enable: true
-  versioning: true
+  versioning: false
   css:
     minify: true
     excludes:
     delivery:
       - '@fortawesome/fontawesome-free'
       - 'fonts.googleapis.com'
-      - 'fonts.gstatic.com' # 建議加上這個
+      - 'fonts.gstatic.com'
     inlines:
       - css/main.css
   js:
     minify: true
     excludes:
-    # 建議開啟，減少 JS 體積
     remove_comments: true 
   html:
     minify: true
     excludes:
-  # 優先級：12 是合理的，確保在其他插件生成內容後再執行壓縮
   priority: 12
 
 
