@@ -239,7 +239,7 @@ footer:
     # The full num of gongan beian.
     gongan_num: 湘公网安备43313002000080号
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
-    gongan_icon_url: "/img/beian.webp"
+    gongan_icon_url: "/img/beian.png"
 
 
 # ---------------------------------------------------------------
