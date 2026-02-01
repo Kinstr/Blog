@@ -231,9 +231,8 @@ footer:
   powered: true
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
-  # 已禁用, 在自定义 footer (位于 \source\_data\footer.njk) 中调整
   beian:
-    enable: false
+    enable: true
     icp: 湘ICP备2024046506号-1
     # The digit in the num of gongan beian.
     gongan_id: 43313002000080
@@ -356,7 +355,7 @@ text_align:
   mobile: left
 
 # Reduce padding / margin indents on devices with narrow width.
-mobile_layout_economy: false
+mobile_layout_economy: true
 
 # Browser header panel color.
 theme_color:
