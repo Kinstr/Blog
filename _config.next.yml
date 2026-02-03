@@ -102,12 +102,13 @@ open_graph:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  tags: /tags/ || fa fa-tags
-  categories: /categories/ || fa fa-th
-  archives: /archives/ || fa fa-archive
-  #schedule: /schedule/ || fa fa-calendar
+  photos: /photos/ || fa fa-camera-retro
   #sitemap: /sitemap.xml || fa fa-sitemap
+  #tags: /tags/ || fa fa-tags
+  #categories: /categories/ || fa fa-th
+  #archives: /archives/ || fa fa-archive
+  #about: /about/ || fa fa-user
+  #schedule: /schedule/ || fa fa-calendar
   #commonweal: /404/ || fa fa-heartbeat
 
 # Enable / Disable menu icons / item badges.
@@ -148,7 +149,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: /img/math.gif
+  url: /img/avatar.webp
   # If true, the avatar will be displayed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -459,7 +460,7 @@ font:
 
   # Font settings for headlines (<h1> to <h6>).
   headings:
-    external: true
+    external: false
     family: Zilla Slab
     size:
 
