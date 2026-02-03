@@ -1,5 +1,21 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+/* 定义 Inter 可变字体 */
+@font-face {
+  font-family: 'Inter Variable';
+  src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-display: swap; /* 确保文字在加载时不会消失 */
+  font-style: normal;
+}
+
+/* 全局应用字体 */
+body, .post-body, .menu-item {
+  font-family: 'Inter Variable', "PingFang SC", "Microsoft YaHei", sans-serif;
+}
+
+/* 针对标题微调 */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter Variable', "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-weight: 700; /* 自动调用可变字体的 700 字重 */
 }
 
 .site-brand-container {
