@@ -34,18 +34,29 @@ h1, h2, h3, h4, h5, h6 {
 
 .img-custom {
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 47, 167, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 47, 167, 0.6);
   display: block;
   margin: 0 auto;
-  width: 600px;
+  width: 640px;
   height: auto;
-  /* 针对移动端适配：如果屏幕小于 600px，则宽度为 100% */
+  /* 针对移动端适配：如果屏幕小于 640px，则宽度为 100% */
   max-width: 100%;
 }
 
-.search-keyword {
-  color: #e3143b;
-  background: transparent;
-  font-weight: bold;
-  border-bottom: 1px solid #e3143b;
+.video-custom {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  
+  /* 圆角设置 */
+  border-radius: 12px; 
+  overflow: hidden;    /* 必须加这行，否则视频尖角会溢出 */
+  
+  /* 可选：加个阴影让视频更有质感 */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+}
+
+.video-custom video {
+  width: 100%;
+  display: block; /* 消除底部缝隙 */
 }

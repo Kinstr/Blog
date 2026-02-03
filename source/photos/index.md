@@ -3,15 +3,18 @@ title: photos
 date: 2026-02-03 14:20:26
 type: "photos"
 ---
-# 20260117
-{% gp 3-1 %}
-![](https://img.20232043.xyz/file/AgACAgUAAyEGAATi9EYfAAMFaYGRYDpntGznAaTIkw6PTR_4gn0AAvsNaxslHghUZiEm8IZRH2sBAAMCAAN3AAM4BA.jpg)
-![](https://img.20232043.xyz/file/AgACAgUAAyEGAATi9EYfAAMGaYGSWLbjUIG48SYXoBTKGnbBn6AAAvwNaxslHghUSrgVg_SOgfMBAAMCAAN3AAM4BA.jpg)
-![](https://img.20232043.xyz/file/AgACAgUAAyEGAATi9EYfAAMIaYGSoDmvQTumOuRUbVzhC0rDhdQAAgIOaxslHghUrUNP-f3HBtkBAAMCAAN3AAM4BA.jpg)
-{% endgp %}
+# 2026
 
-# 20260122
-{% gp 2-1 %}
-![](https://img.20232043.xyz/file/AgACAgUAAyEGAATi9EYfAAMLaYGXZNIKTUdQR1d4J_uQFEXdB6YAAqwOaxtlXxBUrxXVKxFsJoMBAAMCAAN3AAM4BA.jpg)
-![](https://img.20232043.xyz/file/AgACAgUAAyEGAATi9EYfAAMNaYGXkbzNCg4m_tDeYPlc9sKEOAIAAq4OaxtlXxBUTJNXdbx8TxQBAAMCAAN3AAM4BA.jpg)
-{% endgp %}
+## January
+
+### January 09, 2026
+<img src="/img/posts/MVIMG_20260109_154325.webp" class="img-custom" alt="MVIMG_20260109_154325">
+
+### January 17, 2026
+<img src="/img/posts/MVIMG_20260117_124804.webp" class="img-custom" alt="MVIMG_20260117_124804">
+<img src="/img/posts/MVIMG_20260117_124825.webp" class="img-custom" alt="MVIMG_20260117_124825">
+
+### January 31, 2026
+<video class="video-custom" controls playsinline preload="metadata">
+    <source src="/videos/VID_20260131_154710_DOLBY.mp4#t=0.2" type="video/mp4">
+</video>
