@@ -16,5 +16,5 @@ type: "photos"
 
 ### January 31, 2026
 <video class="video-custom" controls playsinline preload="metadata">
-    <source src="/videos/VID_20260131_154710_DOLBY.mp4#t=0.2" type="video/mp4">
+   <source src="/videos/VID_20260131_154710_DOLBY.mp4#t=0.2" type="video/mp4">
 </video>
