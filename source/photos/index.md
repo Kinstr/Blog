@@ -8,8 +8,8 @@ type: "photos"
 ## January
 
 ### January 09, 2026
-<img src="/img/posts/MVIMG_20260109_154325.webp" class="img-custom" alt="MVIMG_20260109_154325">
+<img src="https://s41.ax1x.com/2026/02/03/pZ50BDK.webp" alt="pZ50BDK.webp" class="img-custom"/>
 
 ### January 17, 2026
-<img src="/img/posts/MVIMG_20260117_124804.webp" class="img-custom" alt="MVIMG_20260117_124804">
-<img src="/img/posts/MVIMG_20260117_124825.webp" class="img-custom" alt="MVIMG_20260117_124825">
+<img src="https://s41.ax1x.com/2026/02/03/pZ50sED.webp" alt="pZ50sED.webp" class="img-custom"/>
+<img src="https://s41.ax1x.com/2026/02/03/pZ50DHO.webp" alt="pZ50DHO.webp" class="img-custom"/>

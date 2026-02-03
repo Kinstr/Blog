@@ -34,7 +34,7 @@ Log in to the [**Cloudflare Dashboard**](https://dash.cloudflare.com/). Navigate
 
 On the next screen, click the link at the bottom: <center>Looking to deploy Pages? <b>Get started</b></center> 
 
-<img src="/img/posts/20260131_184658.webp" class="img-custom">
+<img src="https://s41.ax1x.com/2026/02/03/pZ500u6.webp" alt="pZ500u6.webp" class="img-custom">
 
 On the next page, select **"Import an existing Git repository"**, then choose the repository where your Hexo blog source code is stored. 
 
@@ -70,11 +70,11 @@ Then, click <b>Start Deploy</b>. After the build is complete, you can add your o
 
 Set up the custom domain [www.liuzhenglin.com](https://www.liuzhenglin.com/) on both Cloudflare Pages and ESA Pages. Then, use Alibaba Cloud DNS to configure CNAME regional routing for the subdomain: pointing international traffic to Cloudflare Pages and China mainland traffic to ESA Pages.
 
-<img src="/img/posts/20260131_192320.webp" class="img-custom">
+<img src="https://s41.ax1x.com/2026/02/03/pZ50djx.webp" alt="pZ50djx.webp" class="img-custom">
 
 Run an HTTP speed test on [www.liuzhenglin.com](https://www.liuzhenglin.com) via [ITDOG](https://www.itdog.cn/), and you will see that traffic splitting for mainland China and international regions is successfully implemented.
 
-<img src="/img/posts/20260131_193141.webp" class="img-custom">
+<img src="https://s41.ax1x.com/2026/02/03/pZ50ag1.webp" alt="pZ50ag1.webp" class="img-custom">
 
 # Important Notes
 - Static assets (images, CSS, JS, etc.) should avoid spaces, special characters (e.g., &, %, ?), and excessive length.
